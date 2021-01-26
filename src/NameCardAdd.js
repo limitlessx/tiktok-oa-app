@@ -32,11 +32,7 @@ const NameCardAdd = () => {
     setCard({ ...card, [name]: value });
   };
 
-  useEffect(() => {
-    // console.log('card==>', card)
-  });
-
-  // there is another way to deal the situation where all input has no value which is to disable to "add card" button and the "add card" button is enabled when inputs are entered with values. Please see line 101 for this implementation.
+  // there is another way to deal the situation where all input has no value, which is to disable "add card" button and the "add card" button is enabled when inputs are entered with values. Please see line 101 for this implementation.
   const disabledButton = () => {
     return !(
       firstName.length &&
@@ -93,7 +89,7 @@ const NameCardAdd = () => {
               <Button
                 type="submit"
                 onClick={addCard}
-                color="dark green"
+                color="green"
                 style={{ backgroundColor: "#396C21" }}
                 className="nameCardButton"
                 size="tiny"

@@ -1,6 +1,5 @@
 import React from "react";
-import NameCardAdd from './NameCardAdd'
-import NameCardList from './NameCardList'
+import NameCardAdd from "./NameCardAdd";
 
 const NameCard = () => {
   return (
