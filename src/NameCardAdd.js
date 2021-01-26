@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NameCardList from "./NameCardList";
 import { Button, Form, Card, Grid, Container } from "semantic-ui-react";
 import "./NameCardAdd.css";
