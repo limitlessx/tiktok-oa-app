@@ -1,0 +1,13 @@
+.cardListCard {
+  padding: 12px 12px 12px 12px !important;
+  border-radius: 0px !important;
+  margin-bottom: 3% !important;
+}
+.cardListCard .cardListCardText div:first-child p {
+  color: #6d6c6c !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+.cardListCard .cardListCardText div p {
+  color: #b9b9b9 !important;
+}

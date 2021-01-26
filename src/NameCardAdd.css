@@ -1,0 +1,50 @@
+.nameCardHeader {
+  background-color: #33383b !important;
+  margin-top: 5px !important;
+  margin-bottom: 6% !important;
+}
+
+.nameCardHeader .content .header {
+  color: #396c21 !important;
+  text-align: center;
+}
+
+.nameCardFormAndCardListContainer {
+  width: 800px !important;
+}
+
+.nameCardFormAndCardListContainer .ui.form {
+  margin-bottom: 10% !important;
+}
+
+.nameCardForm {
+  padding-left: 8px !important;
+}
+
+.nameCardFormCol {
+  padding-right: 60px !important;
+}
+
+.nameCardFormButton {
+  padding-left: 40px !important;
+}
+
+.nameCardForm input {
+  border: 0px !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid #b9b9b9 !important;
+  width: 90px !important;
+  padding: 0px 0px 0px 0px !important;
+}
+.nameCardForm input:focus {
+  background-color: yellow !important;
+}
+
+.nameCardForm label {
+  color: #b9b9b9 !important;
+}
+
+.nameCardButton {
+  margin-top: 8px !important;
+  padding: 10px 10px 10px 10px !important;
+}
