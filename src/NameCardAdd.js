@@ -15,12 +15,12 @@ const NameCardAdd = () => {
   const { firstName, lastName, phone, address } = card;
 
   const addCard = () => {
-    // if (!disabledButton()) {
-    //   setCardList([...cards, card]);
-    //   restForm();
-    // }
-    setCardList([...cards, card]);
-    restForm();
+    if (!disabledButton()) {
+      setCardList([...cards, card]);
+      restForm();
+    }
+    // setCardList([...cards, card]);
+    // restForm();
   };
 
   const restForm = () => {
