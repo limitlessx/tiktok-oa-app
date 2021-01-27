@@ -46,8 +46,6 @@ const NameCardAdd = () => {
   };
 
   return (
-    <div>
-      <Card fluid header="Name Card" className="nameCardHeader" />
       <Container fluid className="nameCardFormAndCardListContainer">
         <Form className="nameCardForm">
           <Grid columns="equal">
@@ -119,7 +117,6 @@ const NameCardAdd = () => {
         </Form>
         <NameCardList cardList={cards} />
       </Container>
-    </div>
   );
 };
 

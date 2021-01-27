@@ -1,0 +1,10 @@
+.nameCardHeader {
+    background-color: #33383b !important;
+    margin-top: 5px !important;
+    margin-bottom: 6% !important;
+  }
+  
+  .nameCardHeader .content .header {
+    color: #396c21 !important;
+    text-align: center;
+  }
