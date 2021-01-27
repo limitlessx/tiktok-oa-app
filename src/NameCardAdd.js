@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NameCardList from "./NameCardList";
-import { Button, Form, Card, Grid, Container } from "semantic-ui-react";
+import { Button, Form, Card, Grid, Container, Label } from "semantic-ui-react";
 import "./NameCardAdd.css";
 
 const NameCardAdd = () => {
@@ -42,6 +42,11 @@ const NameCardAdd = () => {
     );
   };
 
+  const phoneNumsValidator = (phoneNums) => {
+    const phoneRegx = /^\d{10}$/;
+    return phoneRegx.test(phoneNums);
+  };
+
   return (
     <div>
       <Card fluid header="Name Card" className="nameCardHeader" />
@@ -56,6 +61,9 @@ const NameCardAdd = () => {
                   onChange={handleChange}
                   value={firstName}
                 />
+                {firstName.length ? (
+                  <Label color="blue">{firstName}</Label>
+                ) : null}
               </Form.Field>
             </Grid.Column>
             <Grid.Column className="nameCardFormCol">
@@ -66,6 +74,9 @@ const NameCardAdd = () => {
                   onChange={handleChange}
                   value={lastName}
                 />
+                {lastName.length ? (
+                  <Label color="blue">{lastName}</Label>
+                ) : null}
               </Form.Field>
             </Grid.Column>
             <Grid.Column className="nameCardFormCol">
@@ -77,12 +88,22 @@ const NameCardAdd = () => {
                   onChange={handleChange}
                   value={phone}
                 />
+                {phone.length ? (
+                  phoneNumsValidator(phone) ? (
+                    <Label color="blue">{phone}</Label>
+                  ) : (
+                    <Label color="red">
+                      Please enter a valid Phone Number
+                    </Label>
+                  )
+                ) : null}
               </Form.Field>
             </Grid.Column>
             <Grid.Column className="nameCardFormCol">
               <Form.Field>
                 <label>Address</label>
                 <input name="address" onChange={handleChange} value={address} />
+                {address.length ? <Label color="blue">{address}</Label> : null}
               </Form.Field>
             </Grid.Column>
             <Grid.Column className="nameCardFormButton">
