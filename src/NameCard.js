@@ -1,6 +1,7 @@
 import React from "react";
 import NameCardAdd from "./NameCardAdd";
 import './NameCard.css'
+import { Card } from "semantic-ui-react";
 
 const NameCard = () => {
   return (

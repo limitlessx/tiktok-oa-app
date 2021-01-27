@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NameCardList from "./NameCardList";
-import { Button, Form, Card, Grid, Container, Label } from "semantic-ui-react";
+import { Button, Form, Grid, Container, Label } from "semantic-ui-react";
 import "./NameCardAdd.css";
 
 const NameCardAdd = () => {
@@ -58,7 +58,7 @@ const NameCardAdd = () => {
                   value={firstName}
                 />
                 {firstName.length ? (
-                  <Label color="blue">{firstName}</Label>
+                  <Label >{firstName}</Label>
                 ) : null}
               </Form.Field>
             </Grid.Column>
@@ -71,7 +71,7 @@ const NameCardAdd = () => {
                   value={lastName}
                 />
                 {lastName.length ? (
-                  <Label color="blue">{lastName}</Label>
+                  <Label >{lastName}</Label>
                 ) : null}
               </Form.Field>
             </Grid.Column>
@@ -86,9 +86,9 @@ const NameCardAdd = () => {
                 />
                 {phone.length ? (
                   phoneNumsValidator(phone) ? (
-                    <Label color="blue">{phone}</Label>
+                    <Label >{phone}</Label>
                   ) : (
-                    <Label color="red">Please enter a valid Phone Number</Label>
+                    <Label color='red'>Please enter a valid Phone Number</Label>
                   )
                 ) : null}
               </Form.Field>
@@ -97,7 +97,7 @@ const NameCardAdd = () => {
               <Form.Field>
                 <label>Address</label>
                 <input name="address" onChange={handleChange} value={address} />
-                {address.length ? <Label color="blue">{address}</Label> : null}
+                {address.length ? <Label >{address}</Label> : null}
               </Form.Field>
             </Grid.Column>
             <Grid.Column className="nameCardFormButton">
