@@ -19,8 +19,6 @@ const NameCardAdd = () => {
       setCardList([...cards, card]);
       restForm();
     }
-    // setCardList([...cards, card]);
-    // restForm();
   };
 
   const restForm = () => {
@@ -92,9 +90,7 @@ const NameCardAdd = () => {
                   phoneNumsValidator(phone) ? (
                     <Label color="blue">{phone}</Label>
                   ) : (
-                    <Label color="red">
-                      Please enter a valid Phone Number
-                    </Label>
+                    <Label color="red">Please enter a valid Phone Number</Label>
                   )
                 ) : null}
               </Form.Field>
